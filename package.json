@@ -1,0 +1,30 @@
+{
+  "name": "blue-queen",
+  "version": "1.0.0",
+  "description": "Blue Queen - Always-online AI assistant with Polish language support",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "npm run server:build && npm run client:build",
+    "server:build": "cd server && npm run build",
+    "client:build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "ai-assistant",
+    "polish",
+    "websocket",
+    "pwa",
+    "react",
+    "nodejs",
+    "openai"
+  ],
+  "author": "BlueQueen Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node dist/index.js",
-    "build": "babel src --out-dir dist",
+    "start": "node src/index.js",
+    "build": "echo 'No build step needed for server'",
     "test": "jest"
   },
   "dependencies": {
@@ -21,14 +21,9 @@
     "multer": "^1.4.5-lts.1",
     "express-rate-limit": "^7.1.5",
     "node-gtts": "^2.0.2",
-    "node-speech-to-text": "^0.1.1",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.0",
-    "@babel/core": "^7.23.2",
-    "@babel/node": "^7.22.19",
-    "@babel/preset-env": "^7.23.2",
     "nodemon": "^3.0.1",
     "jest": "^29.7.0"
   }
